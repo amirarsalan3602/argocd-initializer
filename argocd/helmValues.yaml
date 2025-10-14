@@ -1,0 +1,4 @@
+mainRepo: 'https://git-neo.hooshmandsepehrco.com/avan/devops/clusters/hooshmand-registry.git'
+baseRepo: 'https://git-neo.hooshmandsepehrco.com/avan/devops/baseconfig.git'
+defaultRevision: 'HEAD'
+

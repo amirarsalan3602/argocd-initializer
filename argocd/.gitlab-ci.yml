@@ -1,0 +1,3 @@
+include:
+  - project: 'avan/devops/ci-cd/helm'
+    file: 'gitlab-ci-template/current_cicd.yaml'
