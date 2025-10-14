@@ -1,0 +1,12 @@
+controller:
+  kind: Deployment
+  image:
+    registry: pcr-neo.hooshmandsepehrco.com
+  admissionWebhooks:
+    patch:
+      image:
+        registry: pcr-neo.hooshmandsepehrco.com
+  metrics:
+    enabled: false
+    serviceMonitor:
+      enabled: false
