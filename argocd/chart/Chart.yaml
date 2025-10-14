@@ -1,0 +1,9 @@
+apiVersion: v2
+name: argocd-initializer
+description: This is the first chart we manually reference after installing ArgoCD. This will bring up the Applicationset or applications from the configured Git repository.
+
+type: application
+
+version: 0.1.1
+
+appVersion: "0.0.0"

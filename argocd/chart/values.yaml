@@ -1,0 +1,6 @@
+mainRepo: 'https://repo.com'
+baseRepo: 'https://repo.com'
+defaultRevision: 'HEAD'
+autoSyncProjects:
+   - name: sample
+     namespace: sample
