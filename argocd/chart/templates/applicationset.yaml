@@ -15,7 +15,7 @@ spec:
               generators:
                 - git:
                     repoURL: {{ .Values.mainRepo }}
-                    revision: {{ .Values.defaultRevision }}
+                    revision: {{ .Values.defaultRevision | default .Values.defaultRevision }}
                     pathParamPrefix: simple
                     directories:
                       - path: 'namespaces/*/*'
@@ -79,17 +79,17 @@ spec:
               - "$values/{{ .pathKey }}/helmValues.yaml"
         {{- if  or (not (hasKey . "ignoreBaseRepo")) (eq .ignoreBaseRepo false) }}
         - repoURL: {{ .values.baseRepo }}
-          targetRevision: {{ .values.defaultRevision }}
+          targetRevision: {{ .values.defaultRevision | default .Values.defaultRevision }}
           ref: baseValues
         {{- end }}
         - repoURL: {{ .values.mainRepo }}
-          targetRevision: {{ .values.defaultRevision }}
+          targetRevision: {{ .values.defaultRevision | default .Values.defaultRevision }}
           ref: values
       {{- else }}
       source:
         repoURL: {{ .values.mainRepo }}
         path: {{ .pathKey }}
-        targetRevision: {{ .values.defaultRevision }}
+        targetRevision: {{ .values.defaultRevision | default .Values.defaultRevision }}
         directory:
           recurse: true
       {{- end }}
