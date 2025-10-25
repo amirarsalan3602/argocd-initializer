@@ -6,7 +6,7 @@ controller:
     patch:
       image:
         registry: pcr-neo.hooshmandsepehrco.com
-   patchWebhookJob:
+    patchWebhookJob:
       name: patch
       activeDeadlineSeconds: 300
   metrics:
