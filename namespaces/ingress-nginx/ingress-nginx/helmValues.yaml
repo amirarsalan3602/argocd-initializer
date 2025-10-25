@@ -3,7 +3,7 @@ controller:
     type: NodePort
     nodePorts:
       http: 32081
-      https: 30443
+      https: 31443
   kind: Deployment
   image:
     registry: pcr-neo.hooshmandsepehrco.com
