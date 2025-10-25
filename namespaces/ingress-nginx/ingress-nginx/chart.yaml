@@ -1,3 +1,4 @@
 repoUrl: 'https://repo-neo.hooshmandsepehrco.com/repository/helm-proxy-ingress-nginx'
 chart: 'ingress-nginx'
 chartVersion: '4.13.2'
+ignoreBaseRepo: true
