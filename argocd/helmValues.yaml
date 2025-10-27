@@ -1,3 +1,2 @@
 mainRepo: 'https://github.com/amirarsalan3602/argocd-initializer.git'
 defaultRevision: 'HEAD'
-ignoreBaseRepo: true
