@@ -1,2 +1,3 @@
 mainRepo: 'https://github.com/amirarsalan3602/argocd-initializer.git'
+baseRepo: 'https://git-neo.hooshmandsepehrco.com/avan/devops/baseconfig.git'
 defaultRevision: 'HEAD'
